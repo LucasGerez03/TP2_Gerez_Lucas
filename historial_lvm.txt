@@ -1,0 +1,86 @@
+    1  exit
+    2  sudo fdisk -l
+    3  exit
+    4  sudo fdisk -l
+    5  sudo fdisk /dev/sdd
+    6  free
+    7  free -h
+    8  sudo mkswap /dev/sdd1
+    9  free -h
+   10  sudo swapon /dev/sdd1
+   11  free -h
+   12  swapon -s
+   13  sudo fdisk -l
+   14  sudo fdisk /dev/sdc
+   15  sudo wipefs -a /dev/sdc1
+   16  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   17  sudo pvs
+   18  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   19  sudo vgs
+   20  sudo pvs
+   21  sudo vgcreate vg_web /dev/sdc2
+   22  sudo pvs
+   23  sudo lvcreate -L 1G vg_web -n lv_web1
+   24  sudo lvcreate -L 512M vg_web -n lv_web2
+   25  sudo lvcreate -L 512M vg_web -n lv_web3
+   26  sudo lvs
+   27  sudo pvs
+   28  sudo fdisk -l
+   29  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   30  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   31  mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   32  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   33  pwd
+   34  ls -l
+   35  git clone git@github.com:LucasGerez03/TP2_Gerez_Lucas.git
+   36  ls -l
+   37  git clone https://github.com/LucasGerez03/TP2_Gerez_Lucas.git
+   38  ls -l
+   39  cd TP2_Gerez_Lucas/
+   40  sudo pvs > pvs.txt
+   41  sudo vgs > vgs.txt
+   42  sudo lvs > lvs.txt 
+   43  history > historial_lvm.txt
+   44  ls -l
+   45  git add.
+   46  git add .
+   47  git status
+   48  git git commit -m "subiendo cambios a TP2"
+   49  git commit -m "subiendo cambios a TP2"
+   50  git config --global user.email gerezlucas003@gmail.com
+   51  git config --global user.name LucasGerez03
+   52  git git commit -m "subiendo cambios a TP2"
+   53  git commit -m "subiendo cambios a TP2"
+   54  git push
+   55  git status
+   56  git add.
+   57  git commit -m "subiendo cambios a TP2"
+   58  git status
+   59  git push
+   60  cd
+   61  ls -l
+   62  rmdir -p TP2_Gerez_Lucas/
+   63  cat ~/.ssh/id_ed25519.pub
+   64  ssh-keygen -t ed25519
+   65  ls -l .ssh/
+   66  cat $HOME/.ssh/*.pub
+   67  mkdir repogit
+   68  ls -l .ssh/
+   69  ls -l
+   70  cd repogit/
+   71  git clone git@github.com:LucasGerez03/TP2_Gerez_Lucas.git
+   72  ls -l
+   73  cd TP2_Gerez_Lucas/
+   74  ls -l
+   75  sudo pvs > pvs.txt
+   76  ls -l
+   77  git add.
+   78  git add .
+   79  git status
+   80  git commit -m ""
+   81  git commit -m "primer cambio"
+   82  git status
+   83  git push
+   84  sudo vgs > vgs.txt
+   85  sudo lvs > lvs.txt 
+   86  history > historial_lvm.txt
